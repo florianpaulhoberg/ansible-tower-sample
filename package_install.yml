@@ -1,0 +1,7 @@
+- name: "Install Apache"
+  hosts: all
+  tasks:
+    - name: "Install Apache/httpd package"
+      package:
+        name: httpd
+        state: present
